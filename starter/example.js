@@ -28,7 +28,7 @@ console.log(typeof null);
 */
 
 
-let age = 33;
+age = 45;
 age = 27;
 console.log(age);
 
