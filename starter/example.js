@@ -38,4 +38,31 @@ console.log(birth);
 
 var job = "programmer";
 job = "teacher";
-console.log(job);
+
+var age = 27;
+
+console.log(job, age);
+
+
+var firstName = "batu";
+var lastName = "caglasin";
+
+console.log(firstName + lastName);
+console.log("I am learning javaScript!");
+
+var shelbyAge = 3;
+var batuAge = 27;
+
+console.log(batuAge > shelbyAge);
+console.log(shelbyAge > batuAge);
+console.log(shelbyAge == batuAge);
+var now = 2022;
+console.log(now - 1995 < now - 1994);
+
+var x, y;
+
+x = y = 10 - 5;
+console.log(x, y);
+
+let names;
+console.log(names);
