@@ -62,3 +62,18 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log("Years until retirement:" + " " + yearsUntilRetirement(1995, "Baturay") + " " + "years later.");
 
+//************** ANOTHER EXAMPLE ******************
+
+function cutFruitPiece(fruit) {
+    return fruit * 4;
+}
+
+
+function fruitProcessor2(apples, oranges) {
+    const applePieces = cutFruitPiece(apples);
+    const orangePieces = cutFruitPiece(oranges);
+    const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`
+    return juice;
+}
+
+console.log(fruitProcessor2(2, 3));
