@@ -77,3 +77,24 @@ function fruitProcessor2(apples, oranges) {
 }
 
 console.log(fruitProcessor2(2, 3));
+
+//************** ANOTHER EXAMPLE: OBJECT METHODS ******************
+
+const jonas = {
+    firstName: 'Jonas',
+    surname: 'Schmedtmann', //string value
+    job: 'teacher',
+    friends: ['Micheal', 'Peter', 'Steven'], //array value
+    hasDriverLicense: true, //boolean value
+    calcAges: function (birthYear) { //function value
+        this.age = 2022 - birthYear;
+        //console.log(this);
+        return this.age;
+    },
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAges(1995)} year old ${jonas.job} and he has ${this.hasDriverLicense ? 'a' : 'no'} driver licence.`
+    }
+};
+
+console.log(jonas.calcAges(1995));
+console.log(jonas.getSummary());
